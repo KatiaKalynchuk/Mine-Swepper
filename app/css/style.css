@@ -1,0 +1,64 @@
+ *{
+    margin: auto;
+    padding: 0;
+    border: none;
+}
+.field td {
+    width: 50px;
+    height: 50px;
+    /*background: linear-gradient(to bottom, #a2a2a2, #d6d6d6);*/
+    background: yellowgreen;
+    position: relative;
+    border: solid 1px grey;
+}
+.field td.open {
+    background: gainsboro;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    color: blue;
+    font-weight: bold;
+}
+.field td.lock::after {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: green;
+    left: 15px;
+    top: 15px;
+    content: '';
+}
+.appControl {
+    display: inline-block;
+    float: left;
+    width: 13%;
+    background: gainsboro;
+    left: 250px;
+    position: absolute;
+    padding: 10px 0;
+}
+h2 {
+    text-align: center;
+    color: yellowgreen;
+}
+.title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+input, button {
+    padding: 5px 0;
+    border: solid 1px grey;
+    margin: 3px 0;
+    left: 20px;
+    position: relative;
+
+
+}
+button {
+    width: 160px;
+    height: 30px;
+    background: yellowgreen;
+    font-weight: bold;
+}
